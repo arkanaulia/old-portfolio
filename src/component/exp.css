@@ -1,0 +1,62 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-90%);
+    }
+}
+
+@keyframes ngilang {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#giff2 {
+    animation: slideInFromRight 2s ease-in-out 2s forwards;
+    z-index: -1;
+}
+
+#bio {
+    animation: ngilang 2s ease-in forwards;
+    z-index: 1;
+}
+
+/* #logoo {
+    animation: ngilang 2s ease-in forwards ;
+} */
+
+#paragon {
+    display: none;
+}
+
+@keyframe buatfoto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.tombol>a>div {
+    width: 0;
+    display: fixed;
+    left: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.tombol:hover>a>div {
+    animation-play-state: running;
+    width: 200px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
